@@ -54,7 +54,7 @@ bFeedBack	=	0 # feedback recipe OFF
 bStarForm   =   0 # star formation OFF
 
 bVDetails	=	1
-iOutInterval	=	8
+iOutInterval	=	16
 iLogInterval	=	1
 bDoIonOutput    =   1
 iCheckInterval	=	1
