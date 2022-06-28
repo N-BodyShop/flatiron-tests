@@ -12,6 +12,8 @@ evrard collapse   collapsing cold gas sphere of Evrard 1988
 
 cosmo16           basic ic test and cosmic gas history test
 
+glass16           example script to make glass ICs
+
 cooling           standard metal cooling input (10K-1e9K)
 
 printtipsy        command line utility to autodetect and print data from tipsy binaries
