@@ -1,0 +1,62 @@
+nSmooth		=	32 #low >= 64 if hydro important
+achInFile	=	cosmo16cubed.std
+achOutName	=	cosmo16out
+bDoSelfGravity  =       0 # no perturbation so forces are zero anyway
+
+bPeriodic	=	1
+nReplicas	=	1
+dxPeriod	=	1.0
+dyPeriod	=	1.0
+dzPeriod	=	1.0
+iBinaryOutput	=	1
+bParaRead	=	1
+bParaWrite	=	1
+bStandard	=	1  # ICs are in binary format
+
+bComove		=	1
+dHubble0	=	2.894405018
+dOmega0		=	0.3086
+dLambda		=	0.6814
+dOmegaRad	=	0.0
+dOmegab		=	0.048
+dRedTo		=	0.0
+
+nSteps		=	1024
+dEta		=	0.2
+dEtaCourant	=	0.4
+dEtaDiffusion	=	0.3
+iMaxRung	=	20
+nTruncateRung	=	32
+bCannonical	=	1
+bGeometric	=	0
+iGasModel	=	2  # 0 for adiabatic, 1 for isothermal, 2 for cooling. 
+
+dTheta		=	0.55
+dTheta2		=	0.75
+bPhysicalSoft	=	1
+dSoftMax	=	9
+bSoftMaxMul	=	1
+
+bDoGas		=	1
+dhMinOverSoft	=	0.25
+bViscosityLimiter	=	1
+bViscosityLimitdt	=	1
+dMsolUnit	=	1.27518e+17
+dKpcUnit	=	100000
+dConstAlpha	=	2
+dConstBeta	=	1.666667
+dFracNoDomainDecomp	=	0.01
+
+dMetalDiffusionCoeff	=	0.0 # no diffusion for this test
+dThermalDiffusionCoeff	=	0.0
+bUV		    =	1 # turns on UV background (cf. Haardt & Madau)
+bFeedBack	=	0 # feedback recipe OFF
+bStarForm   =   0 # star formation OFF
+
+bVDetails	=	1
+iOutInterval	=	8
+iLogInterval	=	1
+bDoIonOutput    =   1
+iCheckInterval	=	1
+bKDK		=	1
+bOverwrite	=	0

@@ -1,0 +1,82 @@
+############### Run and Output Related
+achInFile       = AGORA_low.std
+achOutName	    = agora
+
+bStandard       = 1
+bOverwrite 	= 0
+iCheckInterval  = 20
+iOutInterval    = 10
+bDoIOrderOutput = 1  # writes .iord, .igasorder, .rhoform, .Tform
+iLogInterval    = 1
+iBinaryOutput   = 1
+bParaRead       = 1
+bParaWrite      = 1
+bDoGravity      = 1
+bRestart	= 0
+dExtraStore	= 2.0 
+
+################Timesteps
+iMaxRung        = 29
+dEta            = 0.185 
+dEtaCourant     = 0.4   #leave this alone
+
+################Tree Options
+dTheta          = 0.7
+
+################Performance Options
+nTruncateRung = 32
+dFracNoDomainDecomp = 0.1
+
+################Cosmology (off)
+bComove         = 0
+bPeriodic       = 0
+
+################Gas Options
+dMsolUnit       = 1e9
+dKpcUnit        = 1
+dConstGamma     = 1.666667
+dMeanMolWeight  = 0.59259
+nSmooth         = 64
+dThermalDiffusionCoeff = 0.03
+dMetalDiffusionCoeff   = 0.03
+dConstAlpha	= 2
+
+################SPH and Ewald
+nReplicas       = 0
+bKDK            = 1 
+bCannonical     = 1
+bGeometric      = 0
+bVDetails       = 1
+bViscosityLimiter = 1
+bViscosityLimitdt = 1
+bFastGas        = 1
+dhMinOverSoft = 0.25     
+##dInitGasMass    = 8.59322e-05    #required for particle splitting!
+
+################SF Parameters
+bStarForm = 1
+
+bFeedBack       = 1
+nSmoothFeedback = 1
+dInitStarMass   = 8.59322e-04 # >> gasmass => always used full gas particle
+
+dCStar          = 0.05           #SF efficiency per free-fall time
+dESN            = 1e51           #Energy per SN
+dMinGasMass     = 1e-16          # << gasmass 
+dPhysDenMin     = 100            # atoms/cm^3 threshold 2021,2017
+dTempMax        = 1e3            # T threshold (K)
+dDeltaStarForm  = 1e5 
+
+################Gas Physics with Metals/Photo Electric
+bGasCooling				 = 1
+bUV                      = 1  #Probably not essential for AGORA
+##dzTimeClampUV            = 15.099  #Gasoline2
+##dCosmicRayHeating        = 2e-28   #Gasoline2
+##dPhotoelectricHeating    = 2e-26   #Gasoline2
+dDelta                   = 0.0670763 ;1 Myr
+
+############## Jeans Floor
+###dResolveJeans = 0 # off was on with 3.53429 in original
+##dSoft           = 4e-2  #Original AGORA softening was too big (fixed in IC)
+
+
